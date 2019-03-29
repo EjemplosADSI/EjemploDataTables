@@ -520,6 +520,14 @@
 <!-- DataTables -->
 <script type="text/javascript" src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+<script type="text/javascript" src="node_modules/jszip/dist/jszip.min.js"></script>
+<script type="text/javascript" src="node_modules/pdfmake/build/pdfmake.min.js"></script>
+<script type="text/javascript" src="node_modules/pdfmake/build/vfs_fonts.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net-buttons/js/buttons.print.min.js"></script>
 
 <script type="application/javascript">
     $(document).ready(function() {
@@ -531,6 +539,10 @@
             "language": {
                 "url": "Spanish.json"
             },
+            "dom": 'Bfrtip',
+            "buttons": [
+                'copy', 'print', 'excel', 'pdf'
+            ],
             "stateSave" : true, //Guardar la configuracion del usuario
             "pagingType": "full_numbers",
             "scrollX": true, //Desplazamiento Horizontal
